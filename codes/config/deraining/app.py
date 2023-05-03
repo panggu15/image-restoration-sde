@@ -35,4 +35,4 @@ def deraining(image):
     return output
 
 interface = gr.Interface(fn=deraining, inputs="image", outputs="image", title="Image Deraining using IR-SDE")
-interface.launch()
+interface.launch(share=True)
